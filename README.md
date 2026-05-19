@@ -28,33 +28,6 @@ BookManagement/
 | Abstraction   | Entity (abstract class) + Manageable (interface)   |
 | Polymorphism  | UserDAO and BookDAO both implement Manageable<T>   |
 
-## Setup Steps
-
-### Step 1 — MySQL
-1. Open MySQL Workbench or phpMyAdmin
-2. Run the file `bookmanagement_setup.sql`
-3. This creates the `bookmanagement` database, `tblusers`, and `tblbooks`
-4. Default user: **username:** admin / **password:** admin
-
-### Step 2 — NetBeans / IntelliJ Setup
-1. Create a new Java project named **BookManagement**
-2. Create a package named **bookmanagement**
-3. Copy all `.java` files into `src/bookmanagement/`
-4. Add the **MySQL JDBC Driver** (mysql-connector-java) to your project:
-   - Download from: https://dev.mysql.com/downloads/connector/j/
-   - In NetBeans: Right-click Libraries → Add JAR/Folder
-   - In IntelliJ: File → Project Structure → Libraries → Add JAR
-
-### Step 3 — Configure DB Password
-Open `DatabaseConnection.java` and update:
-```java
-private static final String PASSWORD = ""; // ← Enter your MySQL root password here
-```
-If your MySQL user is not root, update USER too.
-
-### Step 4 — Run
-Set **Login.java** as the main class and run the project.
-
 ## Features
 
 ### Login Form
